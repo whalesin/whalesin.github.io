@@ -358,6 +358,11 @@ header
   transition: all 0.3s ease 0s;
 }
 
+.logo img {
+  height: 75px;
+  width: 155px;
+}
+
 .header-area .main-nav {
   box-shadow: 0px 0px 15px rgba(0,0,0,0.1);
   border-radius: 20px;
@@ -558,7 +563,6 @@ header
   .header-area .logo {
     /*margin-top: 27px !important;*/
     margin-left: 30px;
-    margin-top: -3px !important;
   }
   .header-area .menu-trigger {
     display: block !important;
@@ -605,6 +609,18 @@ header
     display: flex !important;
   }
 }
+
+@media screen and (max-width: 480px) {
+  .logo img {
+    position: absolute;
+    top: 50%;
+    left: 20%;
+    transform: translate(-50%, -50%);
+    height: 59px;
+    width: 120px;
+  }
+}
+
 
 /* 
 ---------------------------------------------
@@ -1160,8 +1176,7 @@ a{
 }
 
 .contact-text p {
-  margin-bottom: 11px;
-  color: black;
+  margin-bottom: 28px;
 }
 
 .contact-form input,
